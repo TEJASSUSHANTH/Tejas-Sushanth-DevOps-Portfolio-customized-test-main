@@ -1,13 +1,12 @@
 
-pipeline {
-    agent any 
+stage('clone') { 
+    steps {
+        git branch: 'main', 
+            credentialsId: '3ac4cf0e-8609-4580-85d4-5baa695eb4c3', 
+            url: 'https://github.com/TEJASSUSHANTH/Tejas-Sushanth-DevOps-Portfolio-customized-test-main.git'
+    }
+}
 
-    stages {
-        stage('clone') { 
-            steps {
-                git branch: 'main', url: 'https://github.com/TEJASSUSHANTH/Tejas-Sushanth-DevOps-Portfolio-customized-test.git'
-            }
-        }
         stage('package') { 
             steps {
                 sh 'mvn clean package'
