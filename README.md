@@ -1,4 +1,4 @@
-MR. Tejas Sushanth H V — DevOps & Cloud Portfolio
+Tejas Sushanth H V — DevOps & Cloud Portfolio
 A responsive, 3D-inspired personal portfolio built into the existing Java web application. The site is served as the root web app by Apache Tomcat and remains packaged as a WAR.
 
 Features
